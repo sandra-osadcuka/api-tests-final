@@ -12,7 +12,7 @@ pipeline {
     }
 }
 
-def buildDockerImage() {
+def buildAndPushDockerImage() {
     echo "Building docker image..."
     sh "docker build -t sandraosadcuka/api-tests:latest ."
 
